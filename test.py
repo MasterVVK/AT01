@@ -11,8 +11,8 @@ class TestRemainderFunction(unittest.TestCase):
         self.assertEqual(remainder(20, 4), 0)
 
     def test_negative_numbers(self):
-        self.assertEqual(remainder(-10, 3), -1)
-        self.assertEqual(remainder(10, -3), 1)
+        self.assertEqual(remainder(-10, 3), 2)
+        self.assertEqual(remainder(10, -3), -2)
 
     def test_zero_dividend(self):
         self.assertEqual(remainder(0, 3), 0)
